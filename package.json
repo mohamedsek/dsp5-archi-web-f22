@@ -1,0 +1,22 @@
+{
+  "name": "webapp-formations",
+  "version": "1.0.0",
+  "description": "TP gestion de projet DSP5 Archi Web F22",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedsek/dsp5-archi-web-f22.git"
+  },
+  "author": "Groupe DSP5 F22 Archi Web",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohamedsek/dsp5-archi-web-f22/issues"
+  },
+  "homepage": "https://github.com/mohamedsek/dsp5-archi-web-f22#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
