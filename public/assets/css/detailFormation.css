@@ -1,0 +1,38 @@
+.detail-wrapper {
+    width: 1000px;
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  
+  /* a {
+    color: #00B7FF;
+  } */
+  .left{
+    float: left;
+    width: 500px;
+  }
+  .right{
+    position: relative;
+    float: right;
+    /* border: 1px solid #00B7FF; */
+    box-shadow: 5px 5px 15px 5px #ddd2d8;;
+    padding: 50px;
+    border-radius: 8px;
+    height: 300px;
+    margin-top: 100px;
+  }
+  .tarif{
+
+    position: absolute;
+    top: -16px;
+    left: 85px;
+    font-weight: 700;
+    font-size: 2em;
+  }
+  .list li{
+    margin-bottom: 20px;
+    list-style: none;
+    margin-right: 60px;
+  }
