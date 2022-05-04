@@ -1,0 +1,13 @@
+html {
+  box-sizing: content-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 728px;
+    margin: 0 auto;
+}
+
+.cgu p {
+    text-align: justify;
+}
