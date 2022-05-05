@@ -35,7 +35,7 @@ function fillOffers(offersList) {
         //offerItem.appendChild(offerTitle);
         let offerItem = `
             <div>
-                <h3><a href="/detail-formation.html">${formation.name}</a></h3>
+                <h3><a href="/detail-formation.html">${formation.id}</a></h3>
                 <p>${formation.duration}</p>
             </div>
         `;
