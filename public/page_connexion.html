@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head lan="fr">
+        <meta charset="utf-8">
+        <title>page_connexion</title>
+        <link rel="stylesheet" href="/assets/css/page_connexion.css">
+        <script src="/assets/js/page_connexion.js"></script>
+
+    </head>
+
+    <body>
+        <form class="box">
+
+            <h1>
+                Connexion
+            </h1>
+            <input type="text" name="N_identifiant" placeholder="Votre Identifiant" id="identifiant" required>
+            <input type="password" name="P_Mdp" placeholder="Votre mot de passe" id="Mdp" required>
+            <span id="mesErreur" style="color: red;"></span>
+            <button name="butConnect" type="button" onclick="Fct_valideConnexion()">Connexion</button>
+
+        </form>
+    </body>
+
+</html>
