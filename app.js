@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 const formations = require("./mock/formations.js");
-const company = require("./mock/company.js");
+// const company = require("./mock/company.js");
 
 
 app.get('/', (req, res) => {
@@ -18,9 +18,26 @@ app.get('/offers', (req, res) => {
 });
 
 app.get('/company', (req, res) => {
-    const data = company;
+    const mysql = require('mysql');
+    const db = mysql.createConnection({
+        host: "localhost",
+        user: "root",
+        password: "",
+        database: "gestion_projet"
+    });
 
-    res.send(JSON.stringify(data));
+    db.connect(function (err) {
+        if (err) throw err;
+    });
+
+    db.query("SELECT * FROM `e_entreprise` LIMIT 1", function (err, result) {
+        if (err) throw err;
+        else {
+            const json = Object.values(JSON.parse(JSON.stringify(result)));
+            res.send(JSON.stringify(json[0]));
+        }
+    });
+
 });
 
 app.use(express.static(path.join(__dirname, 'public')));

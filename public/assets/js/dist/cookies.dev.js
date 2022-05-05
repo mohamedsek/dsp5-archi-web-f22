@@ -33,7 +33,7 @@ window.addEventListener("DOMContentLoaded", function _callee(event) {
           getCompanyDetails().then(function (result) {
             var b = Array.prototype.slice.call(document.getElementsByClassName('company'));
             b.forEach(function (item) {
-              item.innerHTML = result[0].name;
+              item.innerHTML = result.A_denomination;
             });
           });
 
