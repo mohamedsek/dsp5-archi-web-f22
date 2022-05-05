@@ -84,6 +84,30 @@ CREATE TABLE IF NOT EXISTS `e_utilisateur` (
   `A_mdp` int(30) NOT NULL,
   PRIMARY KEY (`Id_utilisateur`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Table structure for table `e_entreprise`
+--
+
+DROP TABLE IF EXISTS `e_entreprise`;
+CREATE TABLE `e_entreprise` (
+  `id` int(11) NOT NULL,
+  `A_denomination` varchar(255) NOT NULL,
+  `A_adresse` varchar(300) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `e_entreprise`
+--
+
+INSERT INTO `e_entreprise` (`id`, `A_denomination`, `A_adresse`) VALUES
+(1, 'Entreprise', '26 Cours Pierre Vasseur');
+
+--
+-- AUTO_INCREMENT for table `e_entreprise`
+--
+ALTER TABLE `e_entreprise`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
