@@ -7,7 +7,9 @@ function Fct_valideConnexion(){
 
     if(v_user=="Admin" && v_mdp=="user"){
 
-        window.location.assign("page_admin.html");
+        localStorage.setItem("identifiant","Admin");
+        localStorage.setItem("password","user");
+        window.location.assign("nos-services.html");
 
     }else{
 
